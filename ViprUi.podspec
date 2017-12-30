@@ -9,24 +9,17 @@
 Pod::Spec.new do |s|
   s.name             = 'ViprUi'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ViprUi.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'A lib for iOS interfaces'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A lightweight lib for iOS interfaces
                        DESC
 
-  s.homepage         = 'https://github.com/sbiermanlytle@gmail.com/ViprUi'
+  s.homepage         = 'https://github.com/sbiermanlytle/ViprUi'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sbiermanlytle@gmail.com' => 'sbiermanlytle@gmail.com' }
-  s.source           = { :git => 'https://github.com/sbiermanlytle@gmail.com/ViprUi.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Sebastian Bierman-Lytle' => 'sbiermanlytle@gmail.com' }
+  s.source           = { :git => 'https://github.com/sbiermanlytle/ViprUi.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/iioinc'
 
   s.ios.deployment_target = '8.0'
 

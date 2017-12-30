@@ -1,6 +1,6 @@
 # ViprUi
 
-[![CI Status](http://img.shields.io/travis/sbiermanlytle@gmail.com/ViprUi.svg?style=flat)](https://travis-ci.org/sbiermanlytle@gmail.com/ViprUi)
+[![CI Status](http://img.shields.io/travis/sbiermanlytle/ViprUi.svg?style=flat)](https://travis-ci.org/sbiermanlytle/ViprUi)
 [![Version](https://img.shields.io/cocoapods/v/ViprUi.svg?style=flat)](http://cocoapods.org/pods/ViprUi)
 [![License](https://img.shields.io/cocoapods/l/ViprUi.svg?style=flat)](http://cocoapods.org/pods/ViprUi)
 [![Platform](https://img.shields.io/cocoapods/p/ViprUi.svg?style=flat)](http://cocoapods.org/pods/ViprUi)
