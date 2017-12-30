@@ -106,6 +106,8 @@
 		CB8DA6D01FF8494700550C75 /* ViTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6CF1FF8494700550C75 /* ViTableViewController.swift */; };
 		CB8DA6D21FF8496B00550C75 /* ViNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6D11FF8496B00550C75 /* ViNavbar.swift */; };
 		CB8DA6D41FF8499C00550C75 /* ViprUiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6D31FF8499C00550C75 /* ViprUiExtensions.swift */; };
+		CB8DA6D81FF85A6800550C75 /* ViTablePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6D71FF85A6800550C75 /* ViTablePage.swift */; };
+		CB8DA6DA1FF85BF900550C75 /* ViPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6D91FF85BF900550C75 /* ViPage.swift */; };
 		CCDAF11E7AF29E720C587B038145F622 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8DBE433A202DCF807B91BB5557F6D /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CF55697859D633C852C3586384647EB6 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240CEA0915AA3241F6A49CB65CEC8767 /* NimbleXCTestHandler.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D7617B8D3ECA7601409E3EE7A26026BB /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = B9985CC02179403DC54B3460DCE486AC /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -288,6 +290,8 @@
 		CB8DA6CF1FF8494700550C75 /* ViTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViTableViewController.swift; sourceTree = "<group>"; };
 		CB8DA6D11FF8496B00550C75 /* ViNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViNavbar.swift; sourceTree = "<group>"; };
 		CB8DA6D31FF8499C00550C75 /* ViprUiExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViprUiExtensions.swift; sourceTree = "<group>"; };
+		CB8DA6D71FF85A6800550C75 /* ViTablePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViTablePage.swift; sourceTree = "<group>"; };
+		CB8DA6D91FF85BF900550C75 /* ViPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViPage.swift; sourceTree = "<group>"; };
 		CCE295D4D0ED3F1666C5921320F0E2C6 /* ToSucceed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToSucceed.swift; path = Sources/Nimble/Matchers/ToSucceed.swift; sourceTree = "<group>"; };
 		CDD5CA3831884C4ABA209117134E7BC8 /* Pods_ViprUi_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViprUi_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1C0594000452979B62B1798B1A59E8 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
@@ -377,12 +381,14 @@
 		3F51429643190BD1F4139B6F99CE0482 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CB8DA6A91FF830CA00550C75 /* ViUi.swift */,
-				CB8DA6C91FF8402E00550C75 /* ViViewController.swift */,
-				CB8DA6CD1FF8470700550C75 /* ViAlert.swift */,
-				CB8DA6CF1FF8494700550C75 /* ViTableViewController.swift */,
-				CB8DA6D11FF8496B00550C75 /* ViNavbar.swift */,
 				CB8DA6D31FF8499C00550C75 /* ViprUiExtensions.swift */,
+				CB8DA6A91FF830CA00550C75 /* ViUi.swift */,
+				CB8DA6CD1FF8470700550C75 /* ViAlert.swift */,
+				CB8DA6D11FF8496B00550C75 /* ViNavbar.swift */,
+				CB8DA6C91FF8402E00550C75 /* ViViewController.swift */,
+				CB8DA6D91FF85BF900550C75 /* ViPage.swift */,
+				CB8DA6CF1FF8494700550C75 /* ViTableViewController.swift */,
+				CB8DA6D71FF85A6800550C75 /* ViTablePage.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -891,6 +897,7 @@
 				6BB0EBEB4730B94AC07458E398D142C8 /* MatcherProtocols.swift in Sources */,
 				45F183320C688F9978649F30ABE21D09 /* MatchError.swift in Sources */,
 				4CDACD8A5A6CFB688838AA988E7D1E43 /* Nimble-dummy.m in Sources */,
+				CB8DA6D81FF85A6800550C75 /* ViTablePage.swift in Sources */,
 				54CC2049C937561A469575AF9E6A6FE9 /* NimbleEnvironment.swift in Sources */,
 				CF55697859D633C852C3586384647EB6 /* NimbleXCTestHandler.swift in Sources */,
 				6CB4890B9BF5F846E980634AFE83917D /* NMBExceptionCapture.m in Sources */,
@@ -905,6 +912,7 @@
 				EB3A73071ABA60E77E0704649637D8BD /* SatisfyAnyOf.swift in Sources */,
 				F3BAA36614ABDBC0538B0DEA99CF80A0 /* SourceLocation.swift in Sources */,
 				8170866E2ACE0ACFBC6D90081354EC65 /* Stringers.swift in Sources */,
+				CB8DA6DA1FF85BF900550C75 /* ViPage.swift in Sources */,
 				3B3A88E074630B1EBC2139F4F70F0443 /* ThrowAssertion.swift in Sources */,
 				5BF274C2DEF332ED79B1CD15CFEC3498 /* ThrowError.swift in Sources */,
 				29A65FF7D1752DFFF87F5DC8F55CE859 /* ToSucceed.swift in Sources */,

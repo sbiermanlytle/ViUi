@@ -1,5 +1,5 @@
 //
-//  ViViewController.swift
+//  ViPage.swift
 //  Nimble
 //
 //  Created by iljn on 12/30/17.
@@ -7,17 +7,22 @@
 
 import Foundation
 
-open class ViViewController: UIViewController {
+open class ViPage: ViViewController {
+    
+    var header: ViNavbar!
     
     // MARK: View Control
     // --------------------------------------------------------------------------
     override open func viewDidLoad() {
         super.viewDidLoad()
+        setupNavbar()
     }
     
-    // MARK: Subview Presentation
+    // MARK: Navbar
     // --------------------------------------------------------------------------
-    open func presentAlert(_ title: String, _ message: String?) {
-        self.present(ViAlert.info(title, message), animated: true, completion: nil)
+    open func setupNavbar() {
+        header = ViNavbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 80))
+        header.standardSetup()
+        self.view.addSubview(header)
     }
 }

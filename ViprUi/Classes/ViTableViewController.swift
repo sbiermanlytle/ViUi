@@ -25,10 +25,6 @@ open class ViTableViewController<T>: ViViewController, UITableViewDelegate, UITa
                                  width: self.view.frame.size.width,
                                  height: self.view.frame.size.height);
         
-        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0,
-                                                         width: self.view.frame.width,
-                                                         height: 0))
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
