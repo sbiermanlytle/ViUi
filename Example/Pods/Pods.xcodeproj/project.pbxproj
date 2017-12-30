@@ -101,6 +101,11 @@
 		C8888B014C15F72510446CCE427670FE /* URL+FileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D48A33A49B17952C7ABB6214240CB9 /* URL+FileName.swift */; };
 		C94299839F678B8C348B5FFB5BBF7B58 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301223B3EB74E21CDB1303C459B57231 /* ExampleHooks.swift */; };
 		CB8DA6AA1FF830CA00550C75 /* ViUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6A91FF830CA00550C75 /* ViUi.swift */; };
+		CB8DA6CA1FF8402E00550C75 /* ViViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6C91FF8402E00550C75 /* ViViewController.swift */; };
+		CB8DA6CE1FF8470700550C75 /* ViAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6CD1FF8470700550C75 /* ViAlert.swift */; };
+		CB8DA6D01FF8494700550C75 /* ViTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6CF1FF8494700550C75 /* ViTableViewController.swift */; };
+		CB8DA6D21FF8496B00550C75 /* ViNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6D11FF8496B00550C75 /* ViNavbar.swift */; };
+		CB8DA6D41FF8499C00550C75 /* ViprUiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DA6D31FF8499C00550C75 /* ViprUiExtensions.swift */; };
 		CCDAF11E7AF29E720C587B038145F622 /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8DBE433A202DCF807B91BB5557F6D /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CF55697859D633C852C3586384647EB6 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240CEA0915AA3241F6A49CB65CEC8767 /* NimbleXCTestHandler.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		D7617B8D3ECA7601409E3EE7A26026BB /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = B9985CC02179403DC54B3460DCE486AC /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -278,6 +283,11 @@
 		CAB52415DA15D60348D226639C322706 /* CwlPreconditionTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlPreconditionTesting.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/Mach/CwlPreconditionTesting.h; sourceTree = "<group>"; };
 		CAC690F0A6D305E874409382218C1625 /* Pods-ViprUi_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ViprUi_Example-umbrella.h"; sourceTree = "<group>"; };
 		CB8DA6A91FF830CA00550C75 /* ViUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViUi.swift; sourceTree = "<group>"; };
+		CB8DA6C91FF8402E00550C75 /* ViViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViViewController.swift; sourceTree = "<group>"; };
+		CB8DA6CD1FF8470700550C75 /* ViAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViAlert.swift; sourceTree = "<group>"; };
+		CB8DA6CF1FF8494700550C75 /* ViTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViTableViewController.swift; sourceTree = "<group>"; };
+		CB8DA6D11FF8496B00550C75 /* ViNavbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViNavbar.swift; sourceTree = "<group>"; };
+		CB8DA6D31FF8499C00550C75 /* ViprUiExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViprUiExtensions.swift; sourceTree = "<group>"; };
 		CCE295D4D0ED3F1666C5921320F0E2C6 /* ToSucceed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToSucceed.swift; path = Sources/Nimble/Matchers/ToSucceed.swift; sourceTree = "<group>"; };
 		CDD5CA3831884C4ABA209117134E7BC8 /* Pods_ViprUi_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViprUi_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1C0594000452979B62B1798B1A59E8 /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
@@ -368,6 +378,11 @@
 			isa = PBXGroup;
 			children = (
 				CB8DA6A91FF830CA00550C75 /* ViUi.swift */,
+				CB8DA6C91FF8402E00550C75 /* ViViewController.swift */,
+				CB8DA6CD1FF8470700550C75 /* ViAlert.swift */,
+				CB8DA6CF1FF8494700550C75 /* ViTableViewController.swift */,
+				CB8DA6D11FF8496B00550C75 /* ViNavbar.swift */,
+				CB8DA6D31FF8499C00550C75 /* ViprUiExtensions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -792,7 +807,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -834,6 +849,7 @@
 				73BC5AC2ECDB8722E085F14B53E0D24E /* AssertionRecorder.swift in Sources */,
 				B2C151B20635A480E1937E3D2B509BB4 /* Async.swift in Sources */,
 				EAAA05EBBC34225C0DB45797712E24A1 /* AsyncMatcherWrapper.swift in Sources */,
+				CB8DA6D41FF8499C00550C75 /* ViprUiExtensions.swift in Sources */,
 				7E0C9AE6468A5DF91F0F4C7A387D725C /* BeAKindOf.swift in Sources */,
 				C1D862177DC2999FAC710AC25F253BD0 /* BeAnInstanceOf.swift in Sources */,
 				BF3B7218901760A6226C7F6346BEF454 /* BeCloseTo.swift in Sources */,
@@ -856,8 +872,10 @@
 				41C783192F7ECD485C8C6384D30CBF11 /* CwlDarwinDefinitions.swift in Sources */,
 				5F9AFDECC14365CD10F3D83D50020E32 /* CwlMachBadInstructionHandler.m in Sources */,
 				ADEE95A3A188BE3095990E20766BCCC8 /* DSL+Wait.swift in Sources */,
+				CB8DA6CA1FF8402E00550C75 /* ViViewController.swift in Sources */,
 				8B55BD430033027AD5FF22D630DD9F62 /* DSL.m in Sources */,
 				1A3E19B9F5EEB773C3BB61CA42F8BF62 /* DSL.swift in Sources */,
+				CB8DA6CE1FF8470700550C75 /* ViAlert.swift in Sources */,
 				3D1A89FDD6B579BAA92AD398E5C019F9 /* EndWith.swift in Sources */,
 				C8320A6164C870ADDB8A855ADEBBBDC9 /* Equal.swift in Sources */,
 				BC7B9761322C74FA27969BD55833BA47 /* Errors.swift in Sources */,
@@ -878,6 +896,7 @@
 				6CB4890B9BF5F846E980634AFE83917D /* NMBExceptionCapture.m in Sources */,
 				CB8DA6AA1FF830CA00550C75 /* ViUi.swift in Sources */,
 				68FD03C72D719117929696B62038B3D7 /* NMBExpectation.swift in Sources */,
+				CB8DA6D01FF8494700550C75 /* ViTableViewController.swift in Sources */,
 				A7C13C62E4116CA964A3E82179092AD5 /* NMBObjCMatcher.swift in Sources */,
 				AE4DA49ECD693BF384CD824DF02D7C6E /* NMBStringify.m in Sources */,
 				31C39ED8CB1C9317F1F2840FC919662D /* PostNotification.swift in Sources */,
@@ -889,6 +908,7 @@
 				3B3A88E074630B1EBC2139F4F70F0443 /* ThrowAssertion.swift in Sources */,
 				5BF274C2DEF332ED79B1CD15CFEC3498 /* ThrowError.swift in Sources */,
 				29A65FF7D1752DFFF87F5DC8F55CE859 /* ToSucceed.swift in Sources */,
+				CB8DA6D21FF8496B00550C75 /* ViNavbar.swift in Sources */,
 				A61ADD214AA182EEB2AC95EA3F3D658F /* XCTestObservationCenter+Register.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1046,7 +1066,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1054,14 +1076,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -1231,7 +1259,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1239,15 +1269,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
