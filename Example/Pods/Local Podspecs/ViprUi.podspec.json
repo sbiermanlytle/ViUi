@@ -1,0 +1,22 @@
+{
+  "name": "ViprUi",
+  "version": "0.1.0",
+  "summary": "A short description of ViprUi.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sbiermanlytle@gmail.com/ViprUi",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sbiermanlytle@gmail.com": "sbiermanlytle@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sbiermanlytle@gmail.com/ViprUi.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ViprUi/Classes/**/*"
+}

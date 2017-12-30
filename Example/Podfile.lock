@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - ViprUi (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - ViprUi (from `../`)
+
+EXTERNAL SOURCES:
+  ViprUi:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ViprUi: d8ae51981d8e2ce3ebf33918d846ed0f417831a7
+
+PODFILE CHECKSUM: cf5b05ab01301a35945700ba1fbeb4b6d3c2bd9e
+
+COCOAPODS: 1.2.1

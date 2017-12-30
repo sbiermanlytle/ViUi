@@ -1,0 +1,6 @@
+framework module ViprUi {
+  umbrella header "ViprUi-umbrella.h"
+
+  export *
+  module * { export * }
+}
