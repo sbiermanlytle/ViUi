@@ -11,7 +11,7 @@ public struct ViUi {
     
     // MARK: Fonts
     // --------------------------------------------------------------------------
-    public static func font(_ size: CGFloat) -> UIFont {
-        return UIFont(name: "Helvetica", size: size)!
+    public static func number() -> CGFloat {
+        return 1.0
     }
 }
