@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ViprUi'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A lib for iOS interfaces'
   s.description      = <<-DESC
 A lightweight lib for iOS interfaces
