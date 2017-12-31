@@ -75,11 +75,6 @@ open class ViNavbar: UIView {
         title.text = text
         title.textAlignment = .center
         title.textColor = color
-        if #available(iOS 8.2, *) {
-            title.font = UIFont.systemFont(ofSize: 26, weight: .bold)
-        } else {
-            // Fallback on earlier versions
-        }
         self.addSubview(title)
         return title
     }
