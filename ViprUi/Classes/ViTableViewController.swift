@@ -37,7 +37,7 @@ open class ViTableViewController<T>: ViViewController, UITableViewDelegate, UITa
     open func setupRefreshControl() {
         refreshControl = UIRefreshControl()
         refreshControl.tintColor = .black
-        refreshControl.bounds = CGRect(x: 0, y: -ViNavbar.cNavbarHeight, width: refreshControl.bounds.size.width, height: refreshControl.bounds.size.height)
+        refreshControl.bounds = CGRect(x: 0, y: -ViUi.cNavbarHeight, width: refreshControl.bounds.size.width, height: refreshControl.bounds.size.height)
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         //refreshControl.addTarget(self, action: #selector(ViTableViewController.refresh(_:)), for: .valueChanged)
         self.tableView.addSubview(refreshControl)

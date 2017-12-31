@@ -9,6 +9,12 @@ import UIKit
 
 public struct ViUi {
     
+    // MARK: Global UI Variables
+    // --------------------------------------------------------------------------
+    public static var cAppName:String = "ViprUi"
+    public static var cStatusBarHeight:CGFloat = 20
+    public static var cNavbarHeight:CGFloat = 80
+    
     // MARK: String Formatting
     // --------------------------------------------------------------------------
     public static func formatNumber(_ value: Double, _ decimals: Int) -> String {

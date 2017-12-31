@@ -8,20 +8,15 @@
 import Foundation
 
 open class ViNavbar: UIView {
-    public static let CN = "VprNavbar"
     
     // MARK: Public Data
     // --------------------------------------------------------------------------
-    public static var cStatusBarHeight:CGFloat = 20
-    public static var cNavbarHeight:CGFloat = 80
-    
     public var title: UILabel = UILabel()
     
     // MARK: Initialization
     // --------------------------------------------------------------------------
     override public init (frame : CGRect) {
         super.init(frame : frame)
-        _setupView()
     }
     
     convenience public init () {
@@ -32,27 +27,17 @@ open class ViNavbar: UIView {
         fatalError("This class does not support NSCoding")
     }
     
-    // MARK: Optional Standard UI Components
+    // MARK: Standard Setup
     // --------------------------------------------------------------------------
-    open func standardSetup(_ title: String = "Vipr") {
-        self.backgroundColor = .black
+    open func standardSetup(_ title: String = ViUi.cAppName) {
+        self.backgroundColor = UIColor.init(white: 1, alpha: 0.2)
         _ = setupBlur()
         _ = setupBorder()
         _ = setupTitle(title)
     }
     
-    open func setupBorder(_ width: CGFloat = 1.0) -> CALayer {
-        let border = CALayer()
-        border.borderColor = UIColor.black.cgColor
-        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
-        
-        border.borderWidth = width
-        self.layer.addSublayer(border)
-        self.layer.masksToBounds = true
-        
-        return border
-    }
-    
+    // MARK: Blur Layer
+    // --------------------------------------------------------------------------
     open func setupBlur(_ style: UIBlurEffectStyle = UIBlurEffectStyle.light) -> UIVisualEffectView {
         let blurEffect = UIBlurEffect(style: style)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -66,11 +51,27 @@ open class ViNavbar: UIView {
         return blurEffectView
     }
     
+    // MARK: Border
+    // --------------------------------------------------------------------------
+    open func setupBorder(_ width: CGFloat = 0.5) -> CALayer {
+        let border = CALayer()
+        border.borderColor = UIColor.init(white: 0.8, alpha: 1).cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width, height: self.frame.size.height)
+        
+        border.borderWidth = width
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+        
+        return border
+    }
+    
+    // MARK: Title
+    // --------------------------------------------------------------------------
     open func setupTitle (_ text: String, _ color: UIColor) -> UILabel {
         title.frame = CGRect(x: 0,
-                             y: ViNavbar.cStatusBarHeight + 6,
+                             y: ViUi.cStatusBarHeight + 6,
                              width: self.frame.width,
-                             height: self.frame.size.height - ViNavbar.cStatusBarHeight - 6)
+                             height: self.frame.size.height - ViUi.cStatusBarHeight - 6)
         title.text = text
         title.textAlignment = .center
         title.textColor = color
@@ -83,36 +84,20 @@ open class ViNavbar: UIView {
         return title
     }
     
-    open func setupTitle (_ text: String = "Vipr") -> UILabel {
-        return self.setupTitle(text, .white)
+    open func setupTitle (_ text: String = ViUi.cAppName) -> UILabel {
+        return self.setupTitle(text, .black)
     }
     
-    // MARK: Optional Button UI Components
+    // MARK: Buttons
     // --------------------------------------------------------------------------
-    
-    open func setupTextButton (_ text: String = "Button") -> UIButton {
-        let btn = UIButton()
-        btn.frame = CGRect(x: 0,
-                           y: ViNavbar.cStatusBarHeight + 6,
-                           width: self.frame.width / 3,
-                           height: self.frame.size.height - ViNavbar.cStatusBarHeight - 6)
-        btn.setTitle(text, for: UIControlState.normal)
-        btn.titleLabel?.textAlignment = .center
-        
-        if #available(iOS 8.2, *) {
-            btn.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .medium)
-        } else {
-            // Fallback on earlier versions
-        }
-        
+    open func setupBackButton(_ title:String = "Back") -> UIButton {
+        let btn:UIButton = UIButton.init(frame: CGRect(x: 0, y: ViUi.cStatusBarHeight,
+                                                       width: self.frame.width / 4,
+                                                       height: ViUi.cNavbarHeight - ViUi.cStatusBarHeight))
+        btn.setTitle("Back", for: .normal)
+        btn.setTitleColor(.black, for: .normal)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         self.addSubview(btn)
         return btn
-    }
-    
-    
-    // MARK: Internal Functions
-    // --------------------------------------------------------------------------
-    
-    private func _setupView () {
     }
 }

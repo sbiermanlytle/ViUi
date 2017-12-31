@@ -9,7 +9,8 @@ import Foundation
 
 open class ViTablePage: ViTableViewController<Any> {
     
-    var header: ViNavbar!
+    open var header: ViNavbar!
+    open var hasBackButton: Bool = false
     
     // MARK: View Control
     // --------------------------------------------------------------------------
@@ -21,12 +22,23 @@ open class ViTablePage: ViTableViewController<Any> {
     // MARK: Navbar
     // --------------------------------------------------------------------------
     open func setupNavbar() {
-        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0,
-                                                         width: self.view.frame.width,
-                                                         height: 80))
-        
-        header = ViNavbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 80))
+        header = ViNavbar(frame: CGRect(x: 0, y: 0,
+                                        width: self.view.frame.width,
+                                        height: ViUi.cNavbarHeight))
         header.standardSetup()
         self.view.addSubview(header)
+        
+        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0,
+                                                         width: self.view.frame.width,
+                                                         height: ViUi.cNavbarHeight - ViUi.cStatusBarHeight))
+        
+        if hasBackButton {
+            let btn: UIButton = header.setupBackButton("Back")
+            btn.addTarget(self, action: #selector(backPressed(_:)), for: .touchUpInside)
+        }
+    }
+    
+    @objc func backPressed(_ sender: UIButton!) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
